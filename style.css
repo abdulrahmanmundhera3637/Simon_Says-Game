@@ -1,40 +1,134 @@
+/* General body styling */
 body {
-    text-align: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80px; 
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+h1 {
+  font-size: 2rem; 
+  color: #333;
+}
+
+h2 {
+  font-size: 1.2rem; 
+  color: #555;
+}
+
+/* Button container styling */
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px; 
+}
+
+/* Line styles */
+.line-one, .line-two {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px; 
+}
+
+/* Button styling */
+.btn {
+  height: 120px; 
+  width: 120px;
+  border-radius: 50%; 
+  border: 8px solid black;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1); 
+}
+
+.yellow {
+  background-color: #f99b45;
+}
+
+.red {
+  background-color: #d95980;
+}
+
+.purple {
+  background-color: #819ff9;
+}
+
+.green {
+  background-color: #63aac0;
+}
+
+/* Flashing styles for buttons */
+.flash {
+  background-color: white;
+}
+
+.userflash {
+  background-color: green;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .logo {
+    width: 60px; 
   }
-  
+
+  h1 {
+    font-size: 1.8rem; 
+  }
+
+  h2 {
+    font-size: 1rem; 
+  }
+
   .btn {
-    height: 200px;
-    width: 200px;
-    border-radius: 20%;
-    border: 10px solid black;
-    margin: 2.5rem;
+    height: 100px; 
+    width: 100px;
+    font-size: 1.2rem; 
   }
-  
-  .btn-container {
-    display: flex;
-    justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 50px; 
   }
-  
-  .yellow {
-    background-color: #f99b45;
+
+  h1 {
+    font-size: 1.5rem; 
   }
-  
-  .red {
-    background-color: #d95980;
+
+  h2 {
+    font-size: 0.9rem; 
   }
-  
-  .purple {
-    background-color: #819ff9;
+
+  .btn {
+    height: 80px; 
+    width: 80px;
+    font-size: 1rem; 
   }
-  
-  .green {
-    background-color: #63aac0;
-  }
-  
-  .flash {
-    background-color: white;
-  }
-  
-  .userflash {
-    background-color: green;
-  }
+}
