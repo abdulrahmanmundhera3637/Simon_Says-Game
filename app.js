@@ -55,7 +55,7 @@ function checkAns(idx) {
     overlay.style.display = 'flex'; 
     setTimeout(function () {
       overlay.style.display = 'none'; 
-    }, 3000);
+    }, 500);
     reset();
   }
 }
